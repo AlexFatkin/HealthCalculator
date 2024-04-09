@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+title   HealthCalculator use case
+
+skinparam usecase {
+BackgroundColor white
+BorderColor black
+BackgroundColor<< Main >> white
+BorderColor black
+BorderColor<< Main >> black
+ArrowColor black
+ActorBorderColor black
+ActorFontName Courier
+ActorBackgroundColor<< Human >> white
+}
+scale 1.3
+skinparam DefaultTextAlignment left
+skinparam shadowing false
+skinparam packageStyle frame
+hide circle
+
+':Administrator: as Admin
+
+User - (Browser)
+(Server) - Admin
+(Browser) .. (Server)
+(Server) .. (Application)
+(Application) - Student
+
+'note right of Admin : This is an example.
+'note "This note is connected\nto several objects." as N2
+'(Browser) .. N2
+'N2 .. (Use)
+@enduml
