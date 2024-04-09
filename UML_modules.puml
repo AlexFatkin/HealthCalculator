@@ -37,7 +37,6 @@ calc()
 class IMT{
 weight
 height
-h_level
 harrington2
 calc()
 }
@@ -54,14 +53,13 @@ y_bad
 y_good
 h_level
 y_list
-calc_d(y)
+calc()
 calibrate()
 }
 class Harrington2{
 y_optimum
 d_optimum
-h_level
-calc_d(y)
+calc()
 calibrate()
 }
 Harrington1 "2"--"1" Harrington2

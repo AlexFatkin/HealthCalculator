@@ -224,6 +224,7 @@ class Heart:
 
 
 if __name__ == '__main__':
+    # pip freeze > requirements.txt
     # set_application_parameters()
 
     user_1 = User()  # Создаем объект Пользователь
@@ -234,10 +235,10 @@ if __name__ == '__main__':
 
     # print('Показатели Харрингтона и диаграмма здоровья отрисованы')
 
-    # user_1.health.create_diagram(['ИМТ', 'Сердце', 'Легкие','Разум'], [52, 81, 92, 88])
+    user_1.health.create_diagram(['ИМТ', 'Сердце', 'Легкие','Разум'], [52, 81, 92, 88])
     # user_1.health.create_diagram(['ИМТ', 'Сердце', 'Легкие'], [52, 81, 92])
     # user_1.health.create_diagram(['ИМТ', 'Сердце',], [52, 81])
-    user_1.health.create_diagram(['ИМТ', ], [52, ])
+    # user_1.health.create_diagram(['ИМТ', ], [52, ])
 
 
     def HarringtonShow():
@@ -257,8 +258,8 @@ if __name__ == '__main__':
         #         d = data["opt_d"]
         #     d_range_1.append(d)
 
-        imt_range = range(10, 65, 1)
-        # imt_range = range(5, 81, 1)
+        # imt_range = range(10, 65, 1)
+        imt_range = range(5, 81, 1)
         har_1 = Harrington1()
         y_bad_min = 10
         y_good_min = 15
@@ -290,7 +291,7 @@ if __name__ == '__main__':
         plt.legend(loc='best')
         plt.show()
 
-    HarringtonShow()
+    # HarringtonShow()
 
 # user_2.health.create_diagram(['ИМТ', 'Сердце', 'Легкие'], [60, 70, 80])
 
