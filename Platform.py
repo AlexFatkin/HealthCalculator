@@ -291,7 +291,7 @@ if __name__ == '__main__':
         plt.legend(loc='best')
         plt.show()
 
-    # HarringtonShow()
+    HarringtonShow()
 
 # user_2.health.create_diagram(['ИМТ', 'Сердце', 'Легкие'], [60, 70, 80])
 
